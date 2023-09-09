@@ -1,0 +1,201 @@
+:root {
+--Orange: hsl(25, 97%, 53%);
+--white: hsl(0, 0%, 100%);
+--lighGray: hsl(217, 12%, 63%);
+--mediumGray: hsl(216,12%,54%);
+--darkBlue: #252d37;
+--darkerBlue: #121417;
+
+}
+* {
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html
+{
+  font-size:62.5%;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+}
+body {
+  font-size: 1.4rem;
+  background-color: var(--darkerBlue);
+  /* color: var(--white); */
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .RateMe 
+{
+  width: 37.5rem;
+  height: 40rem;
+  padding: 0rem 3rem;
+  background-image: radial-gradient(circle, #252d37, #20272f, #1c2027, #171a1f, #121417);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem 0rem;
+}
+main .RateMe .superStar,
+main .RateMe .title,
+main .RateMe .description,
+main .RateMe .rate,
+main .RateMe .button,
+main .RateMe .Image,
+main .RateMe .Selection,
+main .RateMe .Regards
+{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+main .RateMe .superStar div
+{
+  width: 5rem;
+  height: 5rem;
+  background-color: hsla(216, 12%, 54%, 0.1);
+  background-image: url('../icons/icon-star.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+main .RateMe .title
+{
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--white);
+}
+main .RateMe .description
+{
+  color: var(--lighGray);
+  line-height: 2rem;
+}
+main .RateMe .rate
+{
+  justify-content: space-between;
+}
+main .RateMe .rate .rate_content
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: hsla(216, 12%, 54%, 0.1);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  transition-property: background-color, color;
+  overflow: hidden;
+}
+main .RateMe .rate .rate_content:hover
+{
+  background-color: var(--Orange);
+}
+
+main .RateMe .rate .rate_content input[type="radio"]
+{
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+main .RateMe .rate .rate_content input[type="radio"]:checked
+{
+  background-color: var(--lighGray);
+}
+main .RateMe .rate .rate_content label  
+{
+  position: absolute;
+  margin: 0 auto;
+  color: var(--lighGray);
+} 
+main .RateMe .rate .rate_content input[type="radio"]:checked + label
+{
+  color: var(--white);
+}
+
+main .RateMe .rate .rate_content:hover label
+{
+  color: var(--white);
+}
+
+main .RateMe .button
+{
+  justify-content: center;
+  padding-top: 1rem;
+}
+main .RateMe .button button 
+{
+  width: 100%;
+  border-radius: 2rem;
+  border: none;
+  padding: 1rem 0rem;
+  background-color: var(--Orange);
+  color: var(--white);
+  transition: 0.5s ease-in-out;
+  transition-property: background-color, color;
+  cursor: pointer;
+  letter-spacing: .2rem;
+}
+main .RateMe .button button:hover
+{
+  background-color: var(--white);
+  color: var(--Orange);
+}
+/* ! Sección dos */
+
+main .RateMe .Image,
+main .RateMe .Selection,
+main .RateMe .Regards
+{
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .RateMe .Image img {
+  width: 50%;
+}
+main .RateMe .Selection p
+{
+  padding: 0.5rem 2.5rem;
+  color: var(--Orange);
+  background-color: hsla(216, 12%, 54%, 0.1);
+  border-radius: 2rem;
+  font-weight: 300;
+  letter-spacing: .1rem;
+}
+main .RateMe .Regards p
+{
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.27rem;
+  font-weight: 400;
+  letter-spacing: .05rem;
+  color: var(--lighGray);
+}
+main .RateMe .Regards p:nth-child(1)
+{
+  color: var(--white);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+@media (max-width: 500px)
+{
+  main .RateMe 
+  {
+    width: 90%;
+  }
+}

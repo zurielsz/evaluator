@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Practice JS IV | Interactive rating component</title>
+      <!-- * Estilos personales -->
+      <link rel="stylesheet" href="./assets/css/main.css">
+      <!-- * Fuentes -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <main>
+        <section class="RateMe" id="Bienvenido">
+          <div class="superStar">
+            <div></div>
+          </div>
+          <div class="title">
+            <p>How did we do?</p>
+          </div>
+          <div class="description">
+            <p>Please let us know how we did with your support request. All feedback is appreciated 
+              to help us improve our offering!</p>
+          </div>
+          <div class="rate" id="Evaluate"></div>
+          <div class="button">
+            <button onclick="evaluador()">SUBMIT</button>
+          </div>
+        </section>
+        <section class="RateMe" id="Evaluado">
+          <div class="Image">
+            <img src="./assets/img/illustration-thank-you.svg" alt="">
+          </div>
+          <div class="Selection">
+            <p>You selected <span id="evaluacion"></span> out of 5</p>
+          </div>
+          <div class="Regards">
+            <p>Thank you!</p>
+            <p>We appreciate you taking the time to give a rating.</p>
+            <p>If you ever need more support, don’t hesitate to get in touch!</p>
+          </div>
+
+        </section>
+      </main>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
