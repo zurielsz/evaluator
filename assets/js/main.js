@@ -1,6 +1,8 @@
+// Variables para la evaluación
 const Contenedor = document.getElementById('Evaluate');
-const evalucion = document.getElementById('evaluacion');
 const Options = 5;
+// creación de cada radio
+const evalucion = document.getElementById('evaluacion');
 for (let i = 1; i <= Options; i++) {
   const rateContent = document.createElement('div');
   rateContent.classList.add('rate_content');
@@ -16,7 +18,9 @@ for (let i = 1; i <= Options; i++) {
   rateContent.appendChild(label);
   Contenedor.appendChild(rateContent);
 }
+// Sección con evaluación oculta
 document.querySelector('#Evaluado').style.display = 'none';
+// Función para evaluar
 function evaluador() {
   const radios = document.querySelectorAll('input[type="radio"]');
   let seleccionado = null;

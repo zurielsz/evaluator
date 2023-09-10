@@ -21,7 +21,6 @@ html
 body {
   font-size: 1.4rem;
   background-color: var(--darkerBlue);
-  /* color: var(--white); */
 }
 main {
   width: 100vw;
@@ -29,7 +28,85 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
+.attribution 
+{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  color: var(--white);
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+.attribution .challenge,
+.attribution .solution 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: var(--Orange);
+  width: 120px;
+  border-radius: 1rem 1rem 0 0;
+  gap: .5rem;
+}
+.attribution .challenge .lv 
+{
+  font-size: .8rem;
+  align-self: flex-end;
+  margin-right: .2rem;
+  padding: .4rem 1rem;
+  border-radius: .5rem;
+  background-color: rgb(50, 50, 50);
+}
+.attribution .challenge a,
+.attribution .solution a 
+{
+  text-decoration: none;
+  color: white;
+  transition: scale .4s ease-in-out;
+}
+.attribution .challenge a:hover,
+.attribution .solution a:hover 
+{
+  scale: 1.1;
+}
+.attribution .challenge .technology
+{
+  display: flex;
+  gap: 0 .2rem;
+}
+
+.attribution .solution a 
+{
+  color: var(--Orange);
+}
+.attribution .solution
+{
+  color: var(--Orange);
+  position: relative;
+  justify-content: start;
+  border-radius: 0;
+  background-color: rgb(50, 50, 50);
+}
+.attribution .solution .insignia
+{
+  border-radius: 1.5rem;
+  z-index: -1;
+  position: absolute;
+  width: 9.4rem;
+  height: 9.4rem;
+  background-color: rgb(50, 50, 50);
+  transform: translate(0, -4px) rotate(45deg);
+}
+
 main .RateMe 
 {
   width: 37.5rem;
@@ -197,5 +274,9 @@ main .RateMe .Regards p:nth-child(1)
   main .RateMe 
   {
     width: 90%;
+  }
+  .attribution
+  {
+    display: none;
   }
 }
