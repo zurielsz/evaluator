@@ -75,4 +75,4 @@ This project is under the [MIT License](LICENSE).
 
 - Website - [zurielsz](https://github.com/zurielsz)
 - Frontend Mentor - [@zurielzs](https://www.frontendmentor.io/profile/zurielsz)
-- Linkedin - [@rszurielsm](www.linkedin.com/in/rszurielsm)
+- Linkedin - [@rszurielsm](https://www.linkedin.com/in/rszurielsm)
